@@ -1,0 +1,63 @@
+@import url(https://db.onlinewebfonts.com/c/088f292cf151a6e496fc8cdc5441b3e3?family=Lovelo-Black);
+
+* {
+  font-family: 'Lovelo-Black', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*navbar*/
+
+nav {
+  margin: -2vh 5vw;
+  padding: 4vh 0vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  border: solid 1px rgb(223, 223, 223);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo-nav {
+  width: 15vh;
+  object-fit: contain;
+  background-size: cover;
+}
+
+#navbar {
+  list-style: none;
+  display: flex;
+  gap: 5vh;
+  font-size: 13px;
+
+  a{
+    transition: 0.3s;
+  }
+
+  a:hover {
+    cursor: pointer;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+#contact {
+  border: none;
+  background-color: #397013;
+  color: white;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(57, 112, 19, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact:hover {
+  background-color: #4a8b1b;
+  box-shadow: 0 5px 15px rgba(75, 140, 28, 0.4);
+}
