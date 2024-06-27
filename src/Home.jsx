@@ -1,6 +1,5 @@
 import './App.css'
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { AiFillTikTok } from "react-icons/ai";
+
 
 function Hero() {
     return (
@@ -126,9 +125,7 @@ function Contact() {
                     <p>adress</p>
                     <p>number</p>
                     <h3>Follow us</h3>
-                    <FaFacebookSquare id='icon' />
-                    <FaLinkedin id='icon' />
-                    <AiFillTikTok id='icon' />
+
                 </div>
             </div>
         </div>
