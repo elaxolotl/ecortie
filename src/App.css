@@ -24,6 +24,7 @@ nav {
   top: 0;
   left: 0;
   width: 90vw;
+  z-index: 999;
 }
 
 .logo-nav {
@@ -121,7 +122,7 @@ nav {
     }
   }
 
-  img{
+  img {
     height: auto;
     width: 50vw;
     object-fit: cover;
@@ -129,22 +130,80 @@ nav {
     border-bottom-left-radius: 0px;
   }
 
-  #card{
+  #card {
     width: 15vw;
     height: auto;
     border-radius: 20px;
     border: solid 2px white;
     backdrop-filter: blur(30px);
     position: absolute;
-    top: 350px;
-    left: 600px;
-    h4, p{
+
+    h4,
+    p {
       font-family: "DM Sans", sans-serif;
     }
-    .background{
+
+    .background {
       padding: 15px;
       border-radius: 20px;
       background-color: rgba(236, 236, 236, 0.6);
+    }
+  }
+}
+
+/*products*/
+
+#products {
+  font-family: "DM Sans", sans-serif;
+  margin: 23vh 6vw;
+  padding: 5vh 0vw;
+
+  h1 {
+    margin-bottom: 5vh;
+  }
+
+  #cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+    .card {
+      border-radius: 30px;
+      text-align: center;
+
+      img.product-img {
+        width: 26vw;
+        height: 45vh;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      #card{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: -5vh;
+        border-radius: 20px;
+        border: solid 1px white;
+        backdrop-filter: blur(30px);
+        .background{
+          background-color: rgba(236, 236, 236, 0.6);
+          border-radius: 20px;
+          padding: 15px 0px;
+          h3{
+            font-size: 23px;
+          }
+          span{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 1vw;
+          }
+          .svg{
+            width: 20px;
+          }
+        }
+      }
+
     }
   }
 }

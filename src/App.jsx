@@ -1,5 +1,5 @@
 import './App.css'
-import Hero from './Hero';
+import Home from './Home';
 
 function Nav() {
   const nav = ["home", "about us", "products", "get involved"];
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Hero/>
+      <Home/>
     </>
   )
 }
