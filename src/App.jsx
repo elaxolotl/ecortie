@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import Hero from './Hero';
 
 function Nav() {
   const nav = ["home", "about us", "products", "get involved"];
@@ -20,6 +20,7 @@ function App() {
   return (
     <>
       <Nav />
+      <Hero/>
     </>
   )
 }
