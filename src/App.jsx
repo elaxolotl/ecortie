@@ -11,7 +11,7 @@ function Nav() {
           <li><a>{item}</a></li>
         ))}
       </ul>
-      <button id='contact'>contact us</button>
+      <button id='contact-button'>contact us</button>
     </nav>
   )
 }

@@ -1,4 +1,6 @@
 import './App.css'
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
 
 function Hero() {
     return (
@@ -63,7 +65,7 @@ function Products() {
             <div id='cards'>
                 {products.map((item) => (
                     <div className='card'>
-                        <img src={item.image} alt={item.name} className='product-img'/>
+                        <img src={item.image} alt={item.name} className='product-img' />
                         <div id='card'>
                             <div className="background">
                                 <h3>{item.name}</h3>
@@ -80,11 +82,65 @@ function Products() {
     )
 }
 
+function Form() {
+    return (
+        <form>
+            <div id='contact-form'>
+                <div>
+                    <label>First name</label><br />
+                    <input type="text" />
+                </div>
+                <div>
+                    <label>Last name</label><br />
+                    <input type="text" />
+                </div>
+                <div>
+                    <label>Email</label><br />
+                    <input type="email" />
+                </div>
+                <div>
+                    <label>Phone number</label><br />
+                    <input type="number" />
+                </div>
+                <div className='textarea'>
+                    <label>Message</label><br />
+                    <textarea name="message"></textarea>
+                </div>
+            </div>
+            <input type="submit" className='submit'/>
+        </form>
+    )
+}
+
+function Contact() {
+    return (
+        <div id='contact'>
+            <div className='container'>
+                <div className='sub-container'>
+                    <h1>Contact us</h1>
+                    <Form />
+                </div>
+                <div className='sub-container'>
+                    <h2>Contact information</h2>
+                    <p>contact info here..</p>
+                    <p>adress</p>
+                    <p>number</p>
+                    <h3>Follow us</h3>
+                    <FaFacebookSquare id='icon' />
+                    <FaLinkedin id='icon' />
+                    <AiFillTikTok id='icon' />
+                </div>
+            </div>
+        </div>
+    )
+}
+
 function Home() {
     return (
         <>
             <Hero />
             <Products />
+            <Contact />
         </>
     )
 }
