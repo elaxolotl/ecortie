@@ -125,7 +125,9 @@ function Contact() {
                     <p>adress</p>
                     <p>number</p>
                     <h3>Follow us</h3>
-
+                    <img src='./facebook-svg.svg' alt="facebook"/>
+                    <img src='./linkedin-svg.svg' alt="linkedin"/>
+                    <img src="./tiktok-svg.svg" alt="tiktok" />
                 </div>
             </div>
         </div>
