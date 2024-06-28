@@ -1,21 +1,25 @@
 @media only screen and (max-width: 600px) {
     * {
         overflow-x: hidden !important;
+        margin: 0 auto;
+    }
+
+    .green-button {
+        padding: 5px 10px;
+        font-size: 7px;
     }
 
     /*navbar*/
 
     nav {
         margin: -2vh 5vw 2vh 5vw;
-        padding: 3vh 0vw;
-        width: 65vw !important;
+        padding: 3vh 0vw 2vh 0vw;
+        width: 90vw !important;
         top: 0;
         left: 0;
         width: 90vw;
         z-index: 999;
-        justify-content: center;
-        gap: 5vw;
-        position: fixed;
+        gap: 0vw;
     }
 
     .logo-nav {
@@ -27,27 +31,24 @@
         font-size: 7px;
     }
 
-    #contact-button {
-        display: none;
-    }
-
     /*hero*/
 
     #hero {
         margin: 10vh 5vw 0vh 5vw;
         gap: 1vw;
 
-        .hero-text{
-            width: 40%;
-        }
-
-        p {
+        .hero-small-text {
             font-size: 7px;
         }
 
+        .hero-text {
+            width: 40%;
+        }
+
         h1 {
-            line-height: 25px;
+            line-height: 20px;
             font-size: 5vw;
+            overflow-y: hidden;
         }
 
         .hero-description {
@@ -64,7 +65,8 @@
             }
         }
 
-        .hero-img-phone{
+        .hero-img-phone {
+            display: block;
             height: auto;
             width: 33vw;
             object-fit: cover;
@@ -111,7 +113,7 @@
                             font-size: 10px;
                         }
 
-                        p{
+                        p {
                             font-size: 5px;
                         }
 
@@ -130,10 +132,10 @@
     #contact {
         height: 50vh;
         width: 100vw;
-        justify-content:left;
+        justify-content: center;
         flex-wrap: wrap;
+
         .container {
-            margin-left: 6vw;
             height: 30vh;
             width: 55vw;
             padding: 10px 20px;
@@ -149,22 +151,23 @@
                     margin: 2vh 0vw;
                 }
 
-                h1{
+                h1 {
                     font-size: 15px;
                 }
 
-                h2{
+                h2 {
                     font-size: 10px;
                 }
 
-                h3{
-                    font-size: 7px;
-                }
-                p{
+                h3 {
                     font-size: 7px;
                 }
 
-                img{
+                p {
+                    font-size: 7px;
+                }
+
+                img {
                     width: 25px;
                     object-fit: cover;
                 }
