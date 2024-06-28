@@ -1,4 +1,5 @@
 import './App.css'
+import './mediaQueries.css'
 import Home from './Home';
 
 function Nav() {

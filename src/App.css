@@ -122,7 +122,11 @@ nav {
     }
   }
 
-  img {
+  .herp-img-phone{
+    display: none;
+  }
+
+  .hero-img-desktop {
     height: auto;
     width: 50vw;
     object-fit: cover;

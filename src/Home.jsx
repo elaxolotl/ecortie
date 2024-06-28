@@ -16,7 +16,8 @@ function Hero() {
                 </div>
             </div>
             <div className="hero-img">
-                <img src="./Subtract.png" alt="stinging nettle" />
+                <img src="./Subtract.png" alt="stinging nettle" className='hero-img-desktop'/>
+                <img src='./600px-hero-img.png' alt='stinging nettle' className='hero-img-phone'/>
                 <div id='card' style={{
                     top: "350px",
                     left: "600px"
@@ -27,8 +28,8 @@ function Hero() {
                     </div>
                 </div>
                 <div id='card' style={{
-                    top: "470px",
-                    left: "1200px"
+                    top: "65vh",
+                    left: "80vw"
                 }}>
                     <div className='background'>
                         <h4>Job creation</h4>

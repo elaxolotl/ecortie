@@ -1,0 +1,211 @@
+@media only screen and (max-width: 600px) {
+    * {
+        overflow-x: hidden !important;
+    }
+
+    /*navbar*/
+
+    nav {
+        margin: -2vh 5vw 2vh 5vw;
+        padding: 3vh 0vw;
+        width: 65vw !important;
+        top: 0;
+        left: 0;
+        width: 90vw;
+        z-index: 999;
+        justify-content: center;
+        gap: 5vw;
+        position: fixed;
+    }
+
+    .logo-nav {
+        width: 5vh;
+    }
+
+    #navbar {
+        gap: 2vw;
+        font-size: 7px;
+    }
+
+    #contact-button {
+        display: none;
+    }
+
+    /*hero*/
+
+    #hero {
+        margin: 10vh 5vw 0vh 5vw;
+        gap: 1vw;
+
+        .hero-text{
+            width: 40%;
+        }
+
+        p {
+            font-size: 7px;
+        }
+
+        h1 {
+            line-height: 25px;
+            font-size: 5vw;
+        }
+
+        .hero-description {
+            margin: 1vh 0vw;
+        }
+
+        #action-buttons {
+            display: flex;
+            gap: 2vw;
+
+            button {
+                padding: 5px;
+                font-size: 7px;
+            }
+        }
+
+        .hero-img-phone{
+            height: auto;
+            width: 33vw;
+            object-fit: cover;
+        }
+
+        .hero-img-desktop {
+            display: none;
+        }
+
+        #card {
+            display: none;
+        }
+    }
+
+    /*products*/
+
+    #products {
+        margin: 0vh 6vw;
+        padding: 5vh 0vw;
+
+        h1 {
+            margin-bottom: 2vh;
+            font-size: 20px;
+        }
+
+        #cards {
+            gap: 3vw;
+            justify-content: flex-start;
+
+            .card {
+
+                img.product-img {
+                    width: 20vw;
+                    height: 10vh;
+                }
+
+                #card {
+                    margin-top: -3vh;
+
+                    .background {
+                        padding: 5px 0px;
+
+                        h3 {
+                            font-size: 10px;
+                        }
+
+                        p{
+                            font-size: 5px;
+                        }
+
+                        .svg {
+                            width: 5px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    /*contact*/
+
+    #contact {
+        height: 50vh;
+        width: 100vw;
+        justify-content:left;
+        flex-wrap: wrap;
+        .container {
+            margin-left: 6vw;
+            height: 30vh;
+            width: 55vw;
+            padding: 10px 20px;
+            gap: 2vw;
+
+            .sub-container {
+                width: 50%;
+                margin: 0vh 0vw;
+
+                h1,
+                h2,
+                h3 {
+                    margin: 2vh 0vw;
+                }
+
+                h1{
+                    font-size: 15px;
+                }
+
+                h2{
+                    font-size: 10px;
+                }
+
+                h3{
+                    font-size: 7px;
+                }
+                p{
+                    font-size: 7px;
+                }
+
+                img{
+                    width: 25px;
+                    object-fit: cover;
+                }
+
+            }
+        }
+
+        #contact-form {
+            display: flex;
+            gap: 1vw;
+
+            label {
+                color: gray;
+                font-size: 7px;
+            }
+
+            input,
+            textarea {
+                border-radius: 10px;
+            }
+
+            input {
+                padding: 0px 5px;
+                width: 30px;
+            }
+
+            .textarea {
+                flex-grow: 2;
+            }
+
+            textarea {
+                width: 20vw;
+                height: 3vh;
+            }
+        }
+
+        .submit {
+            padding: 5px 10px;
+            margin: 1vh 0vw;
+            font-size: 7px;
+        }
+    }
+
+}
