@@ -1,4 +1,7 @@
 import './App.css'
+import ParkIcon from '@mui/icons-material/Park';
+import VerifiedIcon from '@mui/icons-material/Verified';
+import LoopIcon from '@mui/icons-material/Loop';
 
 function HeroText() {
     return (
@@ -50,7 +53,81 @@ function Hero() {
                 <HeroText />
             </div>
             <div className="hero-img">
-                <HeroImage/>
+                <HeroImage />
+            </div>
+        </div>
+    )
+}
+
+function Intro() {
+    return (
+        <div className='intro'>
+            <p className='header'>our story</p>
+            <div className='content'>
+                <div>
+                    <p className='title'><span>Ecortie</span> was born from a shared mission</p>
+                </div>
+                <div>
+                    <p className='description'>
+                        Ecortie revolutionizes agriculture by harnessing
+                        the overlooked potential of stinging nettles,
+                        transforming them into a premium fertilizer.
+                        We enhance this blend further by incorporating
+                        used coffee grounds and tea leaves, ensuring optimal
+                        nutrient enrichment for soil health. Our dedication to
+                        sustainability drives us to offer an affordable alternative
+                        to traditional fertilizers, empowering small-scale farmers
+                        to achieve robust yields without compromising on quality. <br />
+                        <p className='second-paragraph'>
+                            Emphasizing a zero-waste philosophy, Ecortie not only supports
+                            ecological balance but also creates valuable job opportunities
+                            in communities facing high unemployment rates.
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function Benefits() {
+    const benefits = [
+        {
+            name:'Eco-friendly',
+            icon:<ParkIcon/>,
+            text:'Made from natural ingredients',
+            image: "./eco-friendly.jpg"
+        },
+        {
+            name:'Effective',
+            icon:<VerifiedIcon/>,
+            text:'Boosts plant growth naturally',
+            image: "./effective.jpg"
+        },
+        {
+            name:'Sustainable',
+            icon:<LoopIcon/>,
+            text:'Promotes eco-friendly gardening',
+            image: "./sustainable.jpg"
+        },
+    ]
+
+    return (
+        <div id='benefits'>
+            <p className='header'>benefits</p>
+            <h1>How <span>Ecortie</span> helps</h1>
+            <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates iure ab libero.</p>
+            <div className='card'>
+                {benefits.map((item)=>(
+                    <div className='sub-card'>
+                        <img src={item.image} alt={item.name} />
+                        <div className='card-text'>
+                            <span className='icon'>{item.icon}</span>
+                            <h3>{item.name}</h3>
+                            <p>{item.text}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     )
@@ -154,6 +231,8 @@ function Home() {
     return (
         <>
             <Hero />
+            <Intro />
+            <Benefits />
             <Products />
             <Contact />
         </>
