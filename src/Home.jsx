@@ -2,20 +2,22 @@ import './App.css'
 import ParkIcon from '@mui/icons-material/Park';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import LoopIcon from '@mui/icons-material/Loop';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function HeroText() {
     return (
-        <>
+        <div className='background'>
             <p className='hero-small-text'>empowering environmental conservation</p>
             <h1>Join Us in <br /> <span>Protecting</span> <br /> Our Planet</h1>
             <div className='hero-description'>
                 <p className='hero-small-text'>Join Us in Creating a Sustainable Future for Generations to come, and Save our Planet on the way!</p>
             </div>
             <div id='action-buttons'>
-                <button className='green-button'>Buy our products</button>
-                <button className='green-button'>Sell us your nettles</button>
+                <button className='green-button' id='desktop-btn'>Buy our products</button>
+                <button className='green-button' id='desktop-btn'>Sell us your nettles</button>
             </div>
-        </>
+            <button className='green-button' id='mobile-hero-btn'><p>Discover Ecortie</p> <KeyboardArrowDownIcon/></button>
+        </div>
     )
 }
 
@@ -23,7 +25,7 @@ function HeroImage() {
     return (
         <>
             <img src="./Subtract.png" alt="stinging nettle" className='hero-img-desktop' />
-            <img src='./600px-hero-img.png' alt='stinging nettle' className='hero-img-phone' />
+            <img src='./hero-mobile.png' alt='stinging nettle' className='hero-img-phone' />
             <div id='card' style={{
                 top: "350px",
                 left: "600px"

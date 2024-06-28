@@ -12,64 +12,88 @@
     /*navbar*/
 
     nav {
-        margin: -2vh 5vw 2vh 5vw;
+        margin: -2vh 0vw 2vh 0vw;
         padding: 3vh 0vw 2vh 0vw;
-        width: 90vw !important;
+        width: 100vw !important;
         top: 0;
         left: 0;
         width: 90vw;
+        height: 7vh;
         z-index: 999;
         gap: 0vw;
+        border-radius: 0px;
     }
 
     .logo-nav {
-        width: 5vh;
+        width: 10vh;
     }
 
     #navbar {
-        gap: 2vw;
-        font-size: 7px;
+        gap: 5vw;
+        font-size: 10px;
+    }
+
+    #contact-button {
+        display: none;
     }
 
     /*hero*/
 
     #hero {
-        margin: 10vh 5vw 0vh 5vw;
-        gap: 1vw;
+        background-image: url('./hero-mobile.jpg');
+        background-size: cover;
+        margin: 10vh 0vw;
+        height: 100vh;
+        gap: 0vh;
+        justify-content: center;
 
-        .hero-small-text {
-            font-size: 7px;
+        .background{
+            background-color: rgb(255, 255, 255, 0.4);
+            padding: 10px 15px;
+            height: 37vh;
+            border-radius: 20px;
         }
 
         .hero-text {
-            width: 40%;
+            backdrop-filter: blur(30px);
+            border: solid 2px white;
+            height: 37vh;
+            width: 80vw;
+            border-radius: 20px;
+            margin-top: 50vh;
+            overflow-y: hidden;
+        }
+
+        .hero-img {
+            margin: 0;
+        }
+
+        .hero-small-text {
+            padding-top: 10px;
+            font-size: 15px;
+            color: rgb(67, 67, 67);
         }
 
         h1 {
-            line-height: 20px;
-            font-size: 5vw;
+            line-height: 45px;
+            font-size: 10vw;
             overflow-y: hidden;
         }
 
         .hero-description {
-            margin: 1vh 0vw;
+            margin: 0vh 0vw 1vh 0vw;
         }
 
-        #action-buttons {
+        #desktop-btn {
+            display: none;
+        }
+
+        #mobile-hero-btn{
             display: flex;
-            gap: 2vw;
-
-            button {
-                padding: 5px;
-                font-size: 7px;
-            }
-        }
-
-        .hero-img-phone {
-            display: block;
-            height: auto;
-            width: 33vw;
-            object-fit: cover;
+            align-items: center;
+            width: 35vw;
+            margin: 2vh 0vw;
+            font-size: 15px;
         }
 
         .hero-img-desktop {

@@ -3,7 +3,7 @@ import './mediaQueries.css'
 import Home from './Home';
 
 function Nav() {
-  const nav = ["home", "about us", "products", "get involved"];
+  const nav = [ "about us", "products", "get involved"];
   return (
     <nav>
       <img className='logo-nav' src='./ecortie-logo.png'/>
