@@ -87,6 +87,7 @@ function Intro() {
                     </p>
                 </div>
             </div>
+            <button className='green-button'>Learn more about us</button>
         </div>
     )
 }
