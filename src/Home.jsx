@@ -25,7 +25,6 @@ function HeroImage() {
     return (
         <>
             <img src="./Subtract.png" alt="stinging nettle" className='hero-img-desktop' />
-            <img src='./hero-mobile.png' alt='stinging nettle' className='hero-img-phone' />
             <div id='card' style={{
                 top: "350px",
                 left: "600px"

@@ -104,10 +104,6 @@ nav {
     gap: 2vw;
   }
 
-  .hero-img-phone {
-    display: none;
-  }
-
   .hero-img-desktop {
     height: auto;
     width: 50vw;
@@ -132,6 +128,9 @@ nav {
       border-radius: 20px;
       background-color: rgba(236, 236, 236, 0.6);
     }
+  }
+  #mobile-hero-btn{
+    display: none;
   }
 }
 
@@ -254,6 +253,9 @@ nav {
 
   h1 {
     margin-bottom: 5vh;
+    font-family: 'Lovelo-Black', sans-serif;
+    color: gray;
+    text-align: center;
   }
 
   #cards {
