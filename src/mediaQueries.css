@@ -52,16 +52,17 @@
         .hero-text {
             backdrop-filter: blur(30px);
             border: solid 2px white;
-            height: 40vh;
+            height: auto;
             width: 80vw;
             border-radius: 20px;
             margin-top: 50vh;
             overflow-y: hidden;
+            margin-bottom: 5vh;
         }
 
         .background {
             background-color: rgb(255, 255, 255, 0.4);
-            padding: 15px 15px;
+            padding: 40px 15px;
             height:  37vh;
             border-radius: 20px;
         }
