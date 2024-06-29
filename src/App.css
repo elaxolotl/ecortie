@@ -137,8 +137,8 @@ nav {
 /*intro*/
 .intro {
   font-family: "DM Sans", sans-serif;
-  margin: 2vh 5vw;
-  background-image: url("./intro-pic.jpg");
+  margin: 5vh 5vw 0vh 5vw;
+  background-image: url("/intro-pic.jpg");
   background-size: cover;
   height: 100vh;
   border-radius: 50px;
@@ -173,6 +173,7 @@ nav {
   .description {
     font-weight: 600;
     color: rgb(63, 63, 63);
+    margin-right: 6.5vw;
   }
 
   .second-paragraph {
@@ -273,6 +274,7 @@ nav {
         height: 45vh;
         object-fit: cover;
         border-radius: 20px;
+        box-shadow: rgba(43, 44, 46, 0.2) 0px 8px 24px;
       }
 
       #card {

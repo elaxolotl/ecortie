@@ -49,21 +49,21 @@
         gap: 0vh;
         justify-content: center;
 
-        .background {
-            background-color: rgb(255, 255, 255, 0.4);
-            padding: 10px 15px;
-            height: 37vh;
-            border-radius: 20px;
-        }
-
         .hero-text {
             backdrop-filter: blur(30px);
             border: solid 2px white;
-            height: 37vh;
+            height: 40vh;
             width: 80vw;
             border-radius: 20px;
             margin-top: 50vh;
             overflow-y: hidden;
+        }
+
+        .background {
+            background-color: rgb(255, 255, 255, 0.4);
+            padding: 15px 15px;
+            height:  37vh;
+            border-radius: 20px;
         }
 
         .hero-img {
@@ -113,7 +113,7 @@
     .intro {
         height: 75vh;
         padding: 5vh;
-
+        
         .content {
             gap: 2vw;
             flex-direction: column;
