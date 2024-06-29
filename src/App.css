@@ -179,6 +179,10 @@ nav {
   .second-paragraph {
     margin-top: 5vh;
   }
+
+  button{
+    display: none;
+  }
 }
 
 /*benefits*/
