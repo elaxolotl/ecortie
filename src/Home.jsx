@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react';
 import ParkIcon from '@mui/icons-material/Park';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import LoopIcon from '@mui/icons-material/Loop';
@@ -16,7 +17,7 @@ function HeroText() {
                 <button className='green-button' id='desktop-btn'>Buy our products</button>
                 <button className='green-button' id='desktop-btn'>Sell us your nettles</button>
             </div>
-            <button className='green-button' id='mobile-hero-btn'><p>Discover Ecortie</p> <KeyboardArrowDownIcon/></button>
+            <button className='green-button' id='mobile-hero-btn'><p>Discover Ecortie</p> <KeyboardArrowDownIcon /></button>
         </div>
     )
 }
@@ -95,21 +96,21 @@ function Intro() {
 function Benefits() {
     const benefits = [
         {
-            name:'Eco-friendly',
-            icon:<ParkIcon/>,
-            text:'Made from natural ingredients',
+            name: 'Eco-friendly',
+            icon: <ParkIcon />,
+            text: 'Made from natural ingredients',
             image: "./eco-friendly.jpg"
         },
         {
-            name:'Effective',
-            icon:<VerifiedIcon/>,
-            text:'Boosts plant growth naturally',
+            name: 'Effective',
+            icon: <VerifiedIcon />,
+            text: 'Boosts plant growth naturally',
             image: "./effective.jpg"
         },
         {
-            name:'Sustainable',
-            icon:<LoopIcon/>,
-            text:'Promotes eco-friendly gardening',
+            name: 'Sustainable',
+            icon: <LoopIcon />,
+            text: 'Promotes eco-friendly gardening',
             image: "./sustainable.jpg"
         },
     ]
@@ -120,7 +121,7 @@ function Benefits() {
             <h1>How <span>Ecortie</span> helps</h1>
             <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates iure ab libero.</p>
             <div className='card'>
-                {benefits.map((item)=>(
+                {benefits.map((item) => (
                     <div className='sub-card'>
                         <img src={item.image} alt={item.name} />
                         <div className='card-text'>
@@ -136,43 +137,85 @@ function Benefits() {
 }
 
 function Products() {
+    const [expandedIndex, setExpandedIndex] = useState(0);
+
     const products = [
         {
             name: "Ecortie",
             price: "70dt",
-            image: "https://i0.wp.com/packagingoftheworld.com/wp-content/uploads/2023/11/Famco-Bone-Meal1.jpg?w=1920&ssl=1"
+            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg"
         },
         {
             name: "Ortea",
             price: "90dt",
-            image: "https://pouchme.b-cdn.net/wp-content/uploads/2023/01/Fertilizer-Bags-Mockup-1500x1500px.jpg"
+            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg"
         },
         {
             name: "Ortie+",
             price: "13dt",
-            image: 'https://www.foodpropack.in/img/images/mobile/sustainability-banner-top.png'
+            image: 'https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg'
         }
     ]
+
+    const toggleExpand = (index) => {
+        if (expandedIndex !== index) {
+            setExpandedIndex(index);
+        }
+    };
+
     return (
         <div id='products'>
-            <h1>Our Products</h1>
+            <p className='header'>Products</p>
+            <div className='products-title'>
+                <div>
+                    <h1>What <span>Ecortie</span> makes</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error neque culpa cum eligendi quibusdam quo.</p>
+                </div>
+                <div>
+                    <button className='green-button'>See all of our products</button>
+                </div>
+            </div>
             <div id='cards'>
-                {products.map((item) => (
-                    <div className='card'>
-                        <img src={item.image} alt={item.name} className='product-img' />
-                        <div id='card'>
-                            <div className="background">
-                                <h3>{item.name}</h3>
-                                <span>
-                                    <p>{item.price}</p>
-                                    <img src='./bag.svg' className='svg' />
-                                </span>
-                            </div>
+                {products.map((item, index) => (
+                    <div
+                        className={`card ${expandedIndex === index ? 'expanded' : ''} ${index >= products.length - 2 ? 'left-expand' : ''}`}
+                        onClick={() => toggleExpand(index)}
+                        key={index}
+                    >
+                        <div className={`strip ${expandedIndex === index ? 'open' : 'closed'} ${index === 0 ? 'first-strip' : ''} ${index >= products.length - 2 ? 'last-two-strips' : ''}`}>
+                            <h3>{item.name}</h3>
                         </div>
+                        {expandedIndex === index && (
+                            <div className="product-details">
+                                <div className="details-title">
+                                    <div>
+                                        <h3>{item.name}</h3><h4>{item.price}</h4>
+                                    </div>
+                                    <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur sit,
+                                        voluptas totam iure nam corrupti fugiat debitis ea, reprehenderit dolore laboriosam quo aspernatur tempore?
+                                        Molestias voluptatibus ut iure nobis.</p>
+                                </div>
+                                <div className="details-img">
+                                    <img src={item.image} alt={item.name} className='product-img' />
+                                    <div id='card'>
+                                        <div className="background">
+                                            <span>
+                                                <h4>How to use</h4>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, harum velit
+                                                    tempora veniam veritatis aliquid doloribus expedita eos ratione necessitatibus,
+                                                    ipsum placeat voluptas natus tenetur at ipsa unde ut maiores.</p>
+                                                <button className='green-button'>Buy this</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>
-        </div >
+        </div>
+
     )
 }
 
