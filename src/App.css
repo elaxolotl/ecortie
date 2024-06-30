@@ -279,6 +279,7 @@ nav {
     width: 100%;
     font-family: "DM Sans", sans-serif;
     justify-content: center;
+    gap: 0;
   }
   
   .card {
@@ -291,18 +292,16 @@ nav {
   }
   
   .card.expanded {
-    max-width: 100vw;
+    max-width: 75vw;
   }
 
   .strip {
     height: 80vh;
+    width: 2vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding: 2vh;
-    h3{
-      padding-left: 10px;
-    }
   }
 
   .card{
@@ -324,8 +323,14 @@ nav {
 
   }
 
+  .strip.closed:hover{
+    background-color: #4a8b1b;
+    transition: 0.3s;
+  }
+
   .strip.open {
     background: #ECF1EB;
+    border-right: solid 1px rgb(191, 191, 191);
   }
   
   .strip.closed {
@@ -383,19 +388,12 @@ nav {
         margin-top: 250px;
         .background{
           background-color: rgb(255, 255, 255, 0.8);
-          border-radius: 20px;
-          padding: 10px;
-          width: 100%;
+          border-radius: 15px;
+          padding: 1vw;
+          width: 28vw;
         }
       }
     }
-  }
-  
-  .background {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
   }
   
   .card.left-expand {
