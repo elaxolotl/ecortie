@@ -116,9 +116,9 @@ function Benefits() {
             <p className='header'>benefits</p>
             <h1>How <span>Ecortie</span> helps</h1>
             <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates iure ab libero.</p>
-            <div className='card'>
+            <div className='cards-list'>
                 {benefits.map((item) => (
-                    <div className='sub-card'>
+                    <div className='card'>
                         <img src={item.image} alt={item.name} />
                         <div className='card-text'>
                             <span className='icon'>{item.icon}</span>

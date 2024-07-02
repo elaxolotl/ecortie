@@ -161,6 +161,7 @@ nav {
 }
 
 /*intro*/
+
 #intro {
   font-family: "DM Sans", sans-serif;
   margin: 5vh 5vw 0vh 5vw;
@@ -202,6 +203,7 @@ nav {
       }
     }
   }
+
   button {
     display: none;
   }
@@ -211,10 +213,10 @@ nav {
 
 #benefits {
   margin: 15vh 5vw;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
 
   h1 {
-    font-family: "DM Sans", sans-serif;
-    text-align: center;
     font-size: 40px;
 
     span {
@@ -223,35 +225,35 @@ nav {
   }
 
   .description {
-    font-family: "DM Sans", sans-serif;
-    text-align: center;
     color: gray;
     font-weight: 500;
   }
 
-  .card {
+  .cards-list {
     margin: 5vh 0vw;
     display: flex;
     justify-content: center;
     gap: 5vw;
 
-    .sub-card {
+    .card {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       display: flex;
       gap: 2vw;
-      border-radius: 30px;
+      border-radius: 25px;
+      height: auto;
     }
 
     img {
       width: 10vw;
       height: 10vw;
       object-fit: cover;
-      border-radius: 30px;
+      border-radius: 25px;
     }
 
     .card-text {
       margin: 2vh 2vw 0vh 0vw;
       font-family: "DM Sans", sans-serif;
+      text-align: left;
 
       .icon {
         color: #397013;
