@@ -7,7 +7,7 @@
 }
 
 .green-button {
-  font-family: 'Lovelo-Black', sans-serif;
+  font-family: 'Lovelo-Black';
   border: none;
   background-color: #397013;
   color: white;
@@ -110,6 +110,7 @@ nav {
       gap: 2vw;
       font-family: 'Lovelo-Black', sans-serif;
     }
+
     #mobile-hero-btn {
       display: none;
     }
@@ -160,7 +161,7 @@ nav {
 }
 
 /*intro*/
-.intro {
+#intro {
   font-family: "DM Sans", sans-serif;
   margin: 5vh 5vw 0vh 5vw;
   background-image: url("/intro-pic.jpg");
@@ -180,29 +181,27 @@ nav {
 
     div {
       width: 50%;
+
+      .title {
+        color: black;
+        font-size: 50px;
+        font-weight: 500;
+
+        span {
+          color: #397013;
+        }
+      }
+
+      .description {
+        font-weight: 600;
+        color: rgb(63, 63, 63);
+
+        .second-paragraph {
+          margin-top: 5vh;
+        }
+      }
     }
   }
-
-  .title {
-    color: black;
-    font-size: 50px;
-    font-weight: 500;
-
-    span {
-      color: #397013;
-    }
-  }
-
-  .description {
-    font-weight: 600;
-    color: rgb(63, 63, 63);
-    margin-right: 6.5vw;
-  }
-
-  .second-paragraph {
-    margin-top: 5vh;
-  }
-
   button {
     display: none;
   }

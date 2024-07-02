@@ -59,7 +59,7 @@ function Hero() {
 
 function Intro() {
     return (
-        <div className='intro'>
+        <div id='intro'>
             <p className='header'>our story</p>
             <div className='content'>
                 <div>
