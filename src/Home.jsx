@@ -8,7 +8,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 function HeroText() {
     return (
         <div className='background'>
-            <p className='hero-small-text'>empowering environmental conservation</p>
+            <p className='header'>empowering environmental conservation</p>
             <h1>Join Us in <br /> <span>Protecting</span> <br /> Our Planet</h1>
             <div className='hero-description'>
                 <p className='hero-small-text'>Join Us in Creating a Sustainable Future for Generations to come, and Save our Planet on the way!</p>
@@ -24,27 +24,23 @@ function HeroText() {
 
 function HeroImage() {
     return (
-        <>
-            <img src="./Subtract.png" alt="stinging nettle" className='hero-img-desktop' />
-            <div id='card' style={{
-                top: "350px",
-                left: "600px"
-            }}>
+        <div id='hero-img'>
+            <div id='card'>
                 <div className='background'>
                     <h4>Zero waste</h4>
                     <p>Ecortie is commited to a zero waste initiative through the whole production process</p>
                 </div>
             </div>
-            <div id='card' style={{
-                top: "65vh",
-                left: "80vw"
-            }}>
+            <div>
+                <img src="./Subtract.png" alt="stinging nettle" className='hero-img-desktop' />
+            </div>
+            <div id='card'>
                 <div className='background'>
                     <h4>Job creation</h4>
                     <p>In the fields of agriculture, production, distribution, and retail</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

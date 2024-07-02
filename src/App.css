@@ -7,6 +7,7 @@
 }
 
 .green-button {
+  font-family: 'Lovelo-Black', sans-serif;
   border: none;
   background-color: #397013;
   color: white;
@@ -16,7 +17,6 @@
   box-shadow: 0 5px 15px rgba(57, 112, 19, 0.4);
   cursor: pointer;
   transition: 0.3s;
-  font-family: 'Lovelo-Black', sans-serif;
 }
 
 .green-button:hover {
@@ -25,11 +25,10 @@
 }
 
 .header {
-  text-align: center;
   font-family: 'Lovelo-Black', sans-serif;
   color: gray;
   font-size: 15px;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }
 
 /*navbar*/
@@ -82,65 +81,82 @@ nav {
   gap: 5vh;
   font-family: "DM Sans", sans-serif;
 
-  .hero-small-text {
-    font-family: 'Lovelo-Black', sans-serif;
-    color: gray;
-    font-size: 15px;
-  }
+  .hero-text {
+    .header {
+      text-align: left;
+    }
 
-  h1 {
-    font-size: 7vw;
-    font-weight: 500;
-    line-height: 110px;
+    h1 {
+      font-size: 7vw;
+      font-weight: 500;
+      line-height: 15vh;
 
-    span {
-      font-style: italic;
-      color: #397013;
+      span {
+        font-style: italic;
+        color: #397013;
+      }
+    }
+
+    .hero-description {
+      margin: 3vh 0vw;
+
+      p {
+        font-weight: 600;
+      }
+    }
+
+    #action-buttons {
+      display: flex;
+      gap: 2vw;
+      font-family: 'Lovelo-Black', sans-serif;
+    }
+    #mobile-hero-btn {
+      display: none;
     }
   }
 
-  .hero-description {
-    margin: 3vh 0vw;
+  .hero-img {
+    #hero-img {
+      display: flex;
+      align-items: center;
 
-    p {
-      font-family: "DM Sans", sans-serif;
-      font-weight: 600;
+      #card:first-of-type {
+        margin-right: -12vw;
+      }
+
+      .hero-img-desktop {
+        height: auto;
+        width: 50vw;
+        object-fit: cover;
+      }
+
+      #card:last-of-type {
+        margin-left: -12vw;
+        margin-bottom: -25vh;
+      }
+
+      #card {
+        width: 15vw;
+        height: auto;
+        border-radius: 20px;
+        border: solid 2px white;
+        backdrop-filter: blur(30px);
+
+        h4,
+        p {
+          font-family: "DM Sans", sans-serif;
+        }
+
+        .background {
+          padding: 15px;
+          border-radius: 20px;
+          background-color: rgba(236, 236, 236, 0.6);
+        }
+      }
     }
+
   }
 
-  #action-buttons {
-    display: flex;
-    gap: 2vw;
-  }
-
-  .hero-img-desktop {
-    height: auto;
-    width: 50vw;
-    object-fit: cover;
-  }
-
-  #card {
-    width: 15vw;
-    height: auto;
-    border-radius: 20px;
-    border: solid 2px white;
-    backdrop-filter: blur(30px);
-    position: absolute;
-
-    h4,
-    p {
-      font-family: "DM Sans", sans-serif;
-    }
-
-    .background {
-      padding: 15px;
-      border-radius: 20px;
-      background-color: rgba(236, 236, 236, 0.6);
-    }
-  }
-  #mobile-hero-btn{
-    display: none;
-  }
 }
 
 /*intro*/
@@ -153,7 +169,7 @@ nav {
   border-radius: 50px;
   padding: 10vh;
 
-  .header{
+  .header {
     text-align: left;
   }
 
@@ -187,7 +203,7 @@ nav {
     margin-top: 5vh;
   }
 
-  button{
+  button {
     display: none;
   }
 }
@@ -252,28 +268,33 @@ nav {
 
 /*products*/
 
-#products{
+#products {
   margin: 5vh 5vw;
-  .header{
+
+  .header {
     text-align: left;
   }
-  .products-title{
+
+  .products-title {
     font-family: "DM Sans", sans-serif;
     display: flex;
     justify-content: space-between;
-    margin-bottom:5vh ;
-    h1{
+    margin-bottom: 5vh;
+
+    h1 {
       font-size: 40px;
     }
-    span{
+
+    span {
       color: #397013;
     }
-    p{
+
+    p {
       font-weight: 500;
       color: gray;
     }
   }
-  
+
   #cards {
     display: flex;
     width: 100%;
@@ -281,7 +302,7 @@ nav {
     justify-content: center;
     gap: 0;
   }
-  
+
   .card {
     display: flex;
     flex-direction: row;
@@ -290,7 +311,7 @@ nav {
     max-width: 50px;
     cursor: pointer;
   }
-  
+
   .card.expanded {
     max-width: 75vw;
   }
@@ -304,26 +325,26 @@ nav {
     padding: 2vh;
   }
 
-  .card{
+  .card {
     border-right: solid 3px white;
   }
 
-  .card:last-child{
+  .card:last-child {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
-  .card:first-child{
+  .card:first-child {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
-  
-  .card.left-expand{
+
+  .card.left-expand {
     border-right: 3px solid white;
 
   }
 
-  .strip.closed:hover{
+  .strip.closed:hover {
     background-color: #4a8b1b;
     transition: 0.3s;
   }
@@ -332,56 +353,64 @@ nav {
     background: #ECF1EB;
     border-right: solid 1px rgb(191, 191, 191);
   }
-  
+
   .strip.closed {
-    background:#397013;
+    background: #397013;
     color: white;
   }
-  
+
   .strip h3 {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     margin: 0;
     padding: 10px;
   }
-  
+
   .product-details {
     display: flex;
     flex-direction: column;
     background-color: #ECF1EB;
-    .details-title{
+
+    .details-title {
       display: flex;
-      align-items:flex-start;
+      align-items: flex-start;
       justify-content: center;
       margin: 5vh 5vw;
-      div{
+
+      div {
         width: 40%;
-        h3{
+
+        h3 {
           margin-top: 0vh;
           font-size: 40px;
         }
       }
-      .description{
+
+      .description {
         color: gray;
         font-weight: 500;
         font-size: 15px;
         width: 40%;
       }
-      #mobile-products-btn{
+
+      #mobile-products-btn {
         display: none;
       }
     }
-    .details-img{
+
+    .details-img {
       display: flex;
       justify-content: center;
-      img{
+
+      img {
         margin: 0 auto;
         width: 70vw;
         height: 60vh;
         object-fit: cover;
         border-radius: 30px;
       }
-      #card{
+
+      #card {
         position: absolute;
         width: 30vw;
         backdrop-filter: blur(30px);
@@ -389,7 +418,8 @@ nav {
         border-radius: 20px;
         left: 45%;
         margin-top: 250px;
-        .background{
+
+        .background {
           background-color: rgb(255, 255, 255, 0.8);
           border-radius: 15px;
           padding: 1vw;
@@ -398,17 +428,17 @@ nav {
       }
     }
   }
-  
+
   .card.left-expand {
     flex-direction: row-reverse;
   }
-  
+
   .card.left-expand .strip {
     border-right: none;
     border-left: 1px solid #ddd;
   }
-  
-  h3{
+
+  h3 {
     font-size: 20px;
     margin-top: 100px;
   }
