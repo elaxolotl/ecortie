@@ -254,14 +254,48 @@
           }
         
           .product-details {
+            display: flex;
             flex-direction: column;
-            align-items: center;
-            width: 78vw;
-            margin: 0;
+            background-color: #ECF1EB;
+            width: 100%;
+            .details-title{
+              display: flex;
+              flex-direction: column;
+              align-items:flex-start;
+              justify-content: flex-start ;
+              margin: 5vh 5vw;
+              div{
+                width: 100%;
+                h3{
+                  font-size: 20px;
+                }
+              }
+              .description{
+                display: none;
+              }
+              #mobile-products-btn{
+                display: block;
+                margin: 2vh 0;
+              }
+            }
+            .details-img{
+              justify-content: center;
+              margin: 2vh;
+              img{
+                margin: 0;
+                width: 80%;
+                height: 20vh;
+                object-fit: cover;
+                border-radius: 15px;
+              }
+              #card{
+                display: none;
+                }
+              }
           }
         
           .product-img {
-            max-width: 100px;
+            max-width: none;
             margin: 5px;
           }
         

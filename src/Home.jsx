@@ -191,6 +191,9 @@ function Products() {
                                     <div>
                                         <h3>{item.name}</h3><h4>{item.price}</h4>
                                     </div>
+                                    <div>
+                                        <button className='green-button' id='mobile-products-btn'>Buy this</button>
+                                    </div>
                                     <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur sit,
                                         voluptas totam iure nam corrupti fugiat debitis ea, reprehenderit dolore laboriosam quo aspernatur tempore?
                                         Molestias voluptatibus ut iure nobis.</p>
