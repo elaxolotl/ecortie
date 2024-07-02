@@ -271,10 +271,7 @@ nav {
 
 #products {
   margin: 5vh 5vw;
-
-  .header {
-    text-align: left;
-  }
+  text-align: left;
 
   .products-title {
     font-family: "DM Sans", sans-serif;
@@ -384,6 +381,10 @@ nav {
         h3 {
           margin-top: 0vh;
           font-size: 40px;
+        }
+
+        h4{
+          font-size: 30px;
         }
       }
 
