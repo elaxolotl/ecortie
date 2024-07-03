@@ -243,7 +243,7 @@ function Form() {
                     <textarea name="message"></textarea>
                 </div>
             </div>
-            <input type="submit" className='submit' />
+            <input type="submit" className='green-button' />
         </form>
     )
 }

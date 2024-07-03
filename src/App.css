@@ -7,7 +7,7 @@
 }
 
 .green-button {
-  font-family: 'Lovelo-Black';
+  font-family: 'Lovelo-Black', sans-serif !important;
   border: none;
   background-color: #397013;
   color: white;
@@ -513,21 +513,7 @@ nav {
     }
   }
 
-  .submit {
-    font-family: 'Lovelo-Black', sans-serif;
-    border: none;
-    background-color: #397013;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    box-shadow: 0 5px 15px rgba(57, 112, 19, 0.4);
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 2vh 0vw;
-  }
-
-  .submit:hover {
-    background-color: #4a8b1b;
-    box-shadow: 0 5px 15px rgba(75, 140, 28, 0.4);
+  .green-button{
+    margin-top: 2vh;
   }
 }

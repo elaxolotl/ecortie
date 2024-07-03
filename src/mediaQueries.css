@@ -38,137 +38,129 @@
     /*hero*/
 
     #hero {
-        background-image: url('/hero-mobile.jpg');
+        background-image: url('/mobile-hero-img.jpg');
         background-size: cover;
-        margin: 0vh 0vw;
-        height: 100vh;
-        gap: 0vh;
-        justify-content: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 15vh 5vw;
 
         .hero-text {
-            backdrop-filter: blur(30px);
-            border: solid 2px white;
-            height: 35vh;
-            width: 80vw;
-            border-radius: 20px;
-            margin-top: 55vh;
-            overflow-y: hidden;
-            margin-bottom: 5vh;
-        }
+            .header {
+                color: wheat;
+            }
 
-        .background {
-            background-color: rgb(255, 255, 255, 0.4);
-            padding: 10px 15px 10vh 15px;
-            height: 25vh;
-            border-radius: 20px;
-            overflow-y: hidden;
+            h1 {
+                font-size: 15vw;
+                font-weight: 700;
+                line-height: 8vh;
+                color: wheat;
+                height: auto;
+                overflow-y: hidden;
+
+                span {
+                    color: wheat;
+                }
+            }
+
+            .hero-description {
+                display: none;
+            }
+
+            #action-buttons {
+                display: none;
+            }
+
+            #mobile-hero-btn {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 2vw;
+                height: 5vh;
+                margin: 2vh 0vw;
+                padding: 5px 20px;
+                font-family: 'Lovelo-Black', sans-serif;
+
+                p {
+                    font-size: 15px;
+                }
+
+            }
         }
 
         .hero-img {
-            margin: 0;
-        }
-
-        .hero-small-text {
-            padding-top: 10px;
-            font-size: 15px;
-            color: rgb(67, 67, 67);
-        }
-
-        h1 {
-            line-height: 45px;
-            font-size: 10vw;
-            overflow-y: hidden;
-        }
-
-        .hero-description {
             display: none;
         }
 
-        #desktop-btn {
-            display: none;
-        }
-
-        #mobile-hero-btn {
-            display: flex;
-            align-items: center;
-            width: 35vw;
-            margin: 2vh 0vw;
-            font-size: 15px;
-        }
-
-        .hero-img-desktop {
-            display: none;
-        }
-
-        #card {
-            display: none;
-        }
     }
 
     /*intro*/
 
-    .intro {
-        height: 75vh;
+    #intro {
+        height: 55vh;
         padding: 5vh;
 
         .content {
-            gap: 2vw;
+            gap: 5vw;
             flex-direction: column;
-            justify-content: end !important;
 
             div {
                 width: auto;
+
+                .header {
+                    font-size: 15px;
+                }
+
+                .title {
+                    font-size: 35px;
+                    font-weight: 650;
+
+                    span {
+                        color: #397013;
+                    }
+                }
+
+                .description {
+                    display: none;
+                }
+
             }
-        }
-
-        .header {
-            font-size: 15px;
-        }
-
-        .title {
-            font-size: 30px;
-
-            span {
-                color: #397013;
-            }
-        }
-
-        .description {
-            display: none;
         }
 
         button {
             display: inline-block;
             font-size: 15px;
+            padding: 5px 20px;
+            font-family: 'Lovelo-Black', sans-serif;
         }
     }
 
     /*benefits*/
 
     #benefits {
-        margin: 10vh 5vw 2vh 5vw;
+        margin: 5vh 5vw 0vh 5vw;
 
         h1 {
             font-size: 30px;
         }
 
-        .card {
+        .cards-list {
             margin: 5vh 0vw;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             gap: 5vw;
 
-            .sub-card {
+            .card {
                 gap: 2vw;
                 border-radius: 20px;
                 width: 70vw;
-                height: 25vw;
+                height: 15vh;
+                overflow-y: hidden;
             }
 
             img {
-                width: 25vw;
-                height: 25vw;
+                width: 15vh;
+                height: 15vh;
                 border-radius: 20px;
             }
         }
@@ -177,25 +169,24 @@
     /*products*/
 
     #products {
-        margin: 5vh 5vw;
+
+        .header {
+            text-align: center;
+        }
 
         .products-title {
-            font-family: "DM Sans", sans-serif;
-            display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             margin-bottom: 5vh;
+            text-align: center;
+
+            button {
+                font-family: 'Lovelo-Black', sans-serif;
+                font-size: 12px;
+                margin-top: 2vh;
+            }
 
             h1 {
-                font-size: 40px;
-            }
-
-            span {
-                color: #397013;
-            }
-
-            p {
-                font-weight: 500;
-                color: gray;
+                font-size: 30px;
             }
         }
 
@@ -205,7 +196,11 @@
 
         .card {
             max-width: 100%;
-            margin-bottom: 0px;
+            flex-direction: column;
+        }
+
+        .card.left-expand {
+            flex-direction: column;
         }
 
         .card:first-child {
@@ -234,28 +229,15 @@
             border-bottom: 1px solid white;
         }
 
-        .strip.open {
-            background: #f0f0f0;
-        }
-
-        .strip.closed {
-            background: #397013;
-        }
-
         .strip h3 {
             writing-mode: horizontal-tb;
             transform: rotate(0deg);
             font-size: 20px;
         }
 
-        .card.left-expand {
-            flex-direction: column;
-        }
-
         .product-details {
             display: flex;
             flex-direction: column;
-            background-color: #ECF1EB;
             width: 100%;
 
             .details-title {
@@ -314,19 +296,23 @@
     /*contact*/
 
     #contact {
-        height: 50vh;
+        height: auto;
         width: 100vw;
         justify-content: center;
         flex-wrap: wrap;
 
         .container {
-            height: 30vh;
-            width: 55vw;
+            height: auto;
+            width: 70vw;
             padding: 10px 20px;
+            margin: 2vh 2vw;
             gap: 2vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             .sub-container {
-                width: 50%;
+                width: 100%;
                 margin: 0vh 0vw;
 
                 h1,
@@ -336,23 +322,23 @@
                 }
 
                 h1 {
-                    font-size: 15px;
+                    font-size: 30px;
                 }
 
                 h2 {
-                    font-size: 10px;
+                    font-size: 20px;
                 }
 
                 h3 {
-                    font-size: 7px;
+                    font-size: 15px;
                 }
 
                 p {
-                    font-size: 7px;
+                    font-size: 10px;
                 }
 
                 img {
-                    width: 25px;
+                    width: 30px;
                     object-fit: cover;
                 }
 
@@ -360,12 +346,13 @@
         }
 
         #contact-form {
-            display: flex;
-            gap: 1vw;
+            gap: 7vw;
+            div{
+                width: 30vw;
+            }
 
             label {
-                color: gray;
-                font-size: 7px;
+                font-size: 15px;
             }
 
             input,
@@ -374,8 +361,8 @@
             }
 
             input {
-                padding: 0px 5px;
-                width: 30px;
+                padding: 5px 5px;
+                width: 100px;
             }
 
             .textarea {
@@ -383,15 +370,13 @@
             }
 
             textarea {
-                width: 20vw;
-                height: 3vh;
+                width: 80vw;
+                height: 5vh;
             }
         }
 
-        .submit {
-            padding: 5px 10px;
-            margin: 1vh 0vw;
-            font-size: 7px;
+        .green-button {
+            font-size: 10px;
         }
     }
 
