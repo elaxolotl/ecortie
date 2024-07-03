@@ -1,4 +1,4 @@
-@import url('https://db.onlinewebfonts.com/c/088f292cf151a6e496fc8cdc5441b3e3?family=Lovelo-Black');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 * {
@@ -7,7 +7,9 @@
 }
 
 .green-button {
-  font-family: 'Lovelo-Black', sans-serif !important;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   border: none;
   background-color: #397013;
   color: white;
@@ -25,7 +27,9 @@
 }
 
 .header {
-  font-family: 'Lovelo-Black', sans-serif;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   color: gray;
   font-size: 15px;
   margin-bottom: 1vh;
@@ -48,7 +52,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Lovelo-Black', sans-serif;
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border: solid 1px rgb(223, 223, 223);
