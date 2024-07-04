@@ -14,7 +14,7 @@ function Footer() {
             <img src="/ecortie-logo-white.png" alt="ecortie-logo" className='logo' />
             <ul>
                 {nav.map((item) => (
-                    <li><Link to="/About us"><a>{item}</a></Link></li>
+                    <li><Link to={item}><a>{item}</a></Link></li>
                 ))}
             </ul>
             <div>
