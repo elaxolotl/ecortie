@@ -612,6 +612,8 @@ footer{
   ul{
     list-style: none;
     font-family: "DM Sans", sans-serif;
+    display: flex;
+    gap: 2vw;
     li{
       margin-bottom: 2vh;
     }
@@ -621,13 +623,9 @@ footer{
     a:hover{
       color: gray ;
     }
-    div{
-      h3{
-        color: white ;
-      }
-      img{
-        width: 2vw;
-      }
-    }
+  }
+  div{
+    color: white ;
+      font-family: "DM Sans", sans-serif;
   }
 }

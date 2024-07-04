@@ -2,8 +2,10 @@ import './App.css'
 import GrassIcon from '@mui/icons-material/Grass';
 import OilBarrelIcon from '@mui/icons-material/OilBarrel';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link } from "react-router-dom";
-
 
 function Footer() {
     const nav = ["About us", "Products", "Get involved"];
@@ -17,9 +19,9 @@ function Footer() {
             </ul>
             <div>
                 <h3>follow us</h3>
-                <img src='./facebook-svg.svg' alt="facebook" />
-                <img src='./linkedin-svg.svg' alt="linkedin" />
-                <img src="./tiktok-svg.svg" alt="tiktok" />
+                <FacebookIcon/>
+                <LinkedInIcon/>
+                <InstagramIcon/>
             </div>
         </footer>
     )
