@@ -2,6 +2,8 @@ import './App.css'
 import './mediaQueries.css'
 import Home from './Home';
 import AboutUs from './AboutUs'
+import Products from './Products'
+import GetInvolved from './GetInvolved'
 import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 
@@ -17,17 +19,25 @@ function Nav() {
           <li key={item}><Link to={item}><a>{item}</a></Link></li>
         ))}
       </ul>
-      <button id='contact-button' className='green-button'>contact us</button>
+      <Link to="/#contact"><button id='contact-button' className='green-button'>contact us</button></Link>
     </nav>
   )
 }
 
+
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (hash) {
+      const element = document.getElementById(hash.replace("#", ""));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
 
   return null;
 }
@@ -40,6 +50,8 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="About us" element={<AboutUs />} />
+        <Route path="Products" element={<Products />} />
+        <Route path="Get involved" element={<GetInvolved />} />
       </Routes>
     </BrowserRouter>
   )

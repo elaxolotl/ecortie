@@ -4,6 +4,7 @@ import ParkIcon from '@mui/icons-material/Park';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import LoopIcon from '@mui/icons-material/Loop';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { Link } from "react-router-dom";
 
 function HeroText() {
     return (
@@ -14,8 +15,8 @@ function HeroText() {
                 <p className='hero-small-text'>Join Us in Creating a Sustainable Future for Generations to come, and Save our Planet on the way!</p>
             </div>
             <div id='action-buttons'>
-                <button className='green-button' id='desktop-btn'>Buy our products</button>
-                <button className='green-button' id='desktop-btn'>Sell us your nettles</button>
+                <Link to="Products"><button className='green-button' id='desktop-btn'>Buy our products</button></Link>
+                <Link to="Get involved"><button className='green-button' id='desktop-btn'>Sell us your nettles</button></Link>
             </div>
             <button className='green-button' id='mobile-hero-btn'><p>Discover Ecortie</p> <KeyboardArrowDownIcon /></button>
         </div>
@@ -168,7 +169,7 @@ function Products() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error neque culpa cum eligendi quibusdam quo.</p>
                 </div>
                 <div>
-                    <button className='green-button'>See all of our products</button>
+                <Link to="Products"><button className='green-button'>See all of our products</button></Link>
                 </div>
             </div>
             <div id='cards'>
