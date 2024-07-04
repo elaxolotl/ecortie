@@ -382,6 +382,7 @@
     }
 
     /*about us page*/
+
     #about-us {
         margin: 7vh 5vw;
 
@@ -420,6 +421,31 @@
                     }
                 }
             }
+        }
+    }
+
+    /*footer*/
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+
+        .logo {
+            width: 30vw;
+            height: auto;
+            object-fit: contain;
+        }
+
+        ul {
+            display: none;
+        }
+
+        div {
+            font-size: 4vw;
+            color: white;
+            font-family: "DM Sans", sans-serif;
         }
     }
 }
