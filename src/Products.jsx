@@ -1,36 +1,149 @@
-import { Link } from "react-router-dom";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-function Footer() {
-    const nav = ["About us", "Products", "Get involved"];
+import { useState } from "react";
+import AddIcon from '@mui/icons-material/Add';
+import DeleteIcon from '@mui/icons-material/Delete';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import './App.css'
+
+const products = [
+    {
+        name: 'Ecortie',
+        sizes: ['S', 'M', 'L'],
+        description: 'Nettles mixed with used coffee grounds',
+        img: '/ecortie.jpg',
+        price: 99
+    },
+    {
+        name: 'Ortea powder',
+        sizes: ['S', 'M', 'L'],
+        description: 'Nettles mixed with used tea leftovers',
+        img: '/ecortie.jpg',
+        price: 99
+    },
+    {
+        name: 'Ortea compost',
+        sizes: ['S', 'M', 'L'],
+        description: 'Nettles mixed with used tea leftovers',
+        img: '/ecortie.jpg',
+        price: 99
+    },
+    {
+        name: 'Ortea',
+        sizes: ['S', 'M', 'L'],
+        description: 'Nettles mixed with used tea leftovers',
+        img: '/ecortie.jpg',
+        price: 99
+    }
+];
+
+const Products = () => {
+    const [cart, setCart] = useState([]);
+    const [isCartVisible, setIsCartVisible] = useState(false);
+
+    const addToCart = (product, size, quantity) => {
+        if (quantity > 0) {
+            const item = { product, size, quantity: parseInt(quantity), price: product.price };
+            setCart([...cart, item]);
+        }
+    };
+
+    const removeFromCart = (index) => {
+        const newCart = cart.filter((_, i) => i !== index);
+        setCart(newCart);
+    };
+
+    const calculateTotal = () => {
+        return cart.reduce((total, item) => total + item.quantity * item.price, 0);
+    };
+
     return (
-        <footer>
-            <img src="/ecortie-logo-white.png" alt="ecortie-logo" className='logo' />
+        <div id="products-page">
+            <h1>Our products</h1>
+            <ProductList products={products} addToCart={addToCart} />
+            <div id="cart-button" onClick={() => setIsCartVisible(!isCartVisible)}>
+                <ShoppingCartIcon />
+            </div>
+            <div id="cart-content" className={isCartVisible ? "visible" : ""}>
+                <Cart cart={cart} removeFromCart={removeFromCart} calculateTotal={calculateTotal} />
+            </div>
+        </div>
+    );
+};
+
+const ProductList = ({ products, addToCart }) => {
+    return (
+        <div className="products-list">
+            {products.map((product) => (
+                <ProductCard key={product.name} product={product} addToCart={addToCart} />
+            ))}
+        </div>
+    );
+};
+
+const ProductCard = ({ product, addToCart }) => {
+    return (
+        <div className="product-card">
+            <h2>{product.name}</h2>
+            <h4>{product.description}</h4>
+            <div className="sub-card">
+                <div className="card-text">
+                    <div className="background">
+                        <h3>{product.price} dt</h3>
+                        <p>organic fertilizer</p>
+                    </div>
+                </div>
+                <img src={product.img} alt={product.name} />
+                <div className="card-text">
+                    <div className="background">
+                        <h5>Contains</h5>
+                        <ul>
+                            <li>Potassium</li>
+                            <li>Iron</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="sizes">
+                <h5>Sizes</h5>
+                {product.sizes.map((size) => (
+                    <div key={size} className="size-subset">
+                        <label>{size}</label>
+                        <input
+                            type="number"
+                            min="0"
+                            id={`${product.name}-${size}-quantity`}
+                            placeholder="Enter quantity"
+                        />
+                        <button
+                            onClick={() => {
+                                const quantity = document.getElementById(`${product.name}-${size}-quantity`).value;
+                                addToCart(product, size, quantity);
+                            }}
+                        >
+                            <AddIcon />
+                        </button>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+const Cart = ({ cart, removeFromCart, calculateTotal }) => {
+    return (
+        <div id="cart">
+            <h2>Cart</h2>
             <ul>
-                {nav.map((item) => (
-                    <li><Link to={item}><a>{item}</a></Link></li>
+                {cart.map((item, index) => (
+                    <li key={index}>
+                        {item.quantity} x {item.product.name} ({item.size}) - {item.quantity * item.price} dt
+                        <button onClick={() => removeFromCart(index)}><DeleteIcon /></button>
+                    </li>
                 ))}
             </ul>
-            <div>
-                <h3>follow us</h3>
-                <FacebookIcon />
-                <LinkedInIcon />
-                <InstagramIcon />
-            </div>
-        </footer>
-    )
-}
+            <h3>Total: {calculateTotal()} dt</h3>
+        </div>
+    );
+};
 
-function Products() {
-    return (
-        <>
-            <div id="products-page">
-                <h1>products</h1>
-            </div>
-            <Footer/>
-        </>
-    )
-}
-
-export default Products
+export default Products;

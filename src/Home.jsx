@@ -169,7 +169,7 @@ function Products() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error neque culpa cum eligendi quibusdam quo.</p>
                 </div>
                 <div>
-                <Link to="Products"><button className='green-button'>See all of our products</button></Link>
+                    <Link to="Products"><button className='green-button'>See all of our products</button></Link>
                 </div>
             </div>
             <div id='cards'>

@@ -557,35 +557,40 @@ nav {
     }
   }
 
-  .process{
-    h1{
+  .process {
+    h1 {
       color: black;
       font-size: 2vw;
       margin: 5vh 0vw 2vh 0vw;
     }
-    .cards-list{
+
+    .cards-list {
       display: flex;
       gap: 2vw;
-      .card{
-        h1{
+
+      .card {
+        h1 {
           font-size: 5vw;
           color: #397013;
           margin-bottom: -5vh;
           z-index: 0;
         }
-        .text{
+
+        .text {
           padding: 10px 20px;
           border-radius: 20px;
           z-index: 1;
           position: relative;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           background-color: white;
-          .title{
+
+          .title {
             display: flex;
             align-items: center;
             margin-bottom: 2vh;
             gap: 1vw;
-            .icon{
+
+            .icon {
               background-color: wheat;
               padding: 10px;
               border-radius: 10px;
@@ -597,35 +602,189 @@ nav {
   }
 }
 
+/*products-page*/
+
+#products-page {
+  margin: 15vh 5vw;
+  font-family: "DM Sans", sans-serif;
+  h1{
+    font-size: 3vw;
+    color: #397013;
+    margin-bottom: 10vh;
+  }
+  .products-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    .product-card{
+      text-align: center;
+      h2{
+        font-size: 2vw;
+      }
+      h4{
+        font-size: 1vw;
+        color: gray;
+      }
+      .sub-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-text:first-of-type{
+          margin-right: -12vw;
+          margin-top: -10vh;
+        }
+        .card-text:last-of-type{
+          margin-left: -12vw;
+          margin-bottom: -10vh;
+        }
+        .card-text{
+          width: 10vw;
+          border-radius: 20px;
+          border: solid 2px white;
+          backdrop-filter: blur(30px);
+          .background{
+            padding: 10px 0;
+            border-radius: 20px;
+            background-color: rgba(236, 236, 236, 0.6);
+            ul{
+              list-style: none;
+            }
+          }
+        }
+        img{
+          width: 70vh;
+          height: 70vh;
+          object-fit: cover;
+        }
+      }
+      h5{
+        color: black;
+        font-size: 1.5vw;
+      }
+      .sizes{
+        padding: 0vh 0vw;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        .size-subset{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        label{
+          margin-right: 10px;
+          font-weight: 600;
+        }
+        input{
+          background-color: wheat;
+          border: none;
+          padding: 5px 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          font-family: inherit;
+        }
+        button{
+          background-color: #397013;
+          border: none;
+          color: white;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          padding: 0px 10px;
+        }
+        button:hover{
+          cursor: pointer;
+          background-color: #4a8b1b;
+        }
+      }
+    }
+  }
+  #cart-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#cart-content {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    display: none;
+}
+
+#cart-content.visible {
+    display: block;
+}
+#cart{
+  ul{
+    list-style: none;
+    button{
+      background-color: transparent;
+      border: none;
+      svg{
+        margin-bottom: -7px;
+        margin-left: 10px;
+      }
+    }
+    button:hover{
+      cursor: pointer;
+    }
+  }
+}
+}
+
 /*footer*/
-footer{
+footer {
   background-color: #397013;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  .logo{
+
+  .logo {
     width: 10vw;
     height: auto;
     object-fit: contain;
-  } 
-  ul{
+  }
+
+  ul {
     list-style: none;
     font-family: "DM Sans", sans-serif;
     display: flex;
     gap: 2vw;
-    li{
+
+    li {
       margin-bottom: 2vh;
     }
-    a{
+
+    a {
       color: white;
     }
-    a:hover{
-      color: gray ;
+
+    a:hover {
+      color: gray;
     }
   }
-  div{
-    color: white ;
-      font-family: "DM Sans", sans-serif;
+
+  div {
+    color: white;
+    font-family: "DM Sans", sans-serif;
   }
 }
