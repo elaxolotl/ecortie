@@ -3,6 +3,7 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './App.css'
+import ToastNotification from './ToastNotification';
 
 const products = [
     {
@@ -38,11 +39,14 @@ const products = [
 const Products = () => {
     const [cart, setCart] = useState([]);
     const [isCartVisible, setIsCartVisible] = useState(false);
+    const [toastMessage, setToastMessage] = useState('');
+
 
     const addToCart = (product, size, quantity) => {
         if (quantity > 0) {
             const item = { product, size, quantity: parseInt(quantity), price: product.price };
             setCart([...cart, item]);
+            setToastMessage(`${product.name} (${size}) added to cart`);
         }
     };
 
@@ -65,6 +69,7 @@ const Products = () => {
             <div id="cart-content" className={isCartVisible ? "visible" : ""}>
                 <Cart cart={cart} removeFromCart={removeFromCart} calculateTotal={calculateTotal} />
             </div>
+            {toastMessage && <ToastNotification message={toastMessage} onClose={() => setToastMessage('')} />}
         </div>
     );
 };
