@@ -140,21 +140,21 @@ function Products() {
         {
             name: "Ecortie",
             price: "19dt",
-            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg",
+            image: "./ecortie-home.jpg",
             description: "Ecortie is a unique blend of stinging nettles and used coffee grounds, designed to boost soil fertility and plant health. This fertilizer enhances soil structure, improves water retention, and supplies essential nutrients to support robust plant growth. Ecortie is an ideal choice for eco-conscious gardeners looking for a sustainable and effective fertilizer option.",
             usage: "Distribute Ecortie evenly over your garden soil, working it into the top layer to ensure nutrients reach plant roots. Use it in flower beds, vegetable gardens, or around trees and shrubs."
         },
         {
             name: "Ecortea",
             price: "21.5dt",
-            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg",
+            image: "./ecortea-home.jpg",
             description: "Ecortea combines the power of stinging nettles with tea leaves to create a balanced and effective fertilizer. This blend enriches the soil with essential nutrients, promotes healthy root development, and enhances plant vitality. Ecortea is perfect for gardeners seeking a natural and sustainable way to nourish their plants, ensuring lush and vibrant growth.",
             usage: "Sprinkle Ecortea around the base of your plants, gently working it into the soil. Use it as a top dressing for flower beds, vegetable gardens, or potted plants." 
         },
         {
             name: "Orti+ compost",
             price: "12dt",
-            image: 'https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg',
+            image: './orti+-home.jpg',
             description: "Orti+ compost is crafted from the remaining stinging nettle leaves after the production process,ensuring nothing goes to waste. This nutrient-rich compost enhances soil fertility, promotes healthy plant growth, and helps retain moisture. Ideal for gardeners looking for an eco-friendly solution.",
             usage: "Apply Orti+ compost by spreading a layer over your garden soil. Incorporate it into the top few inches of soil to ensure nutrients reach plant roots. Use it in flower beds, vegetable gardens, or around trees and shrubs."
         }
