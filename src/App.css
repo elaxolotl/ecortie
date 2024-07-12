@@ -761,6 +761,49 @@ nav {
 }
 }
 
+/*get-involved*/
+#get-involved-page{
+  margin: 15vh 5vw;
+  font-family: "DM Sans", sans-serif;
+  h1{
+    font-size: 3vw;
+    color: #397013;
+    margin-bottom: 0vh;
+  }
+  p{
+    color: gray;
+    font-weight: 600;
+  }
+  .involvement-option{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 50%;
+    }
+
+    h2{
+      font-family: "Urbanist", sans-serif;
+      text-transform: uppercase;
+      color: gray;
+      font-weight: 700;
+      font-size: 2vh;
+      margin-bottom: 2vh;
+    }
+
+    button{
+      margin-top: 2vh;
+    }
+
+    img {
+      width: 40vw;
+      height: 20vw;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}
+
 /*footer*/
 footer {
   background-color: #397013;
