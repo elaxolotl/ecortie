@@ -424,6 +424,163 @@
         }
     }
 
+    /*products-page*/
+
+    #products-page {
+        margin: 7vh 5vw;
+
+        h1 {
+            font-size: 8vw;
+            margin-bottom: 10vh;
+            margin: 4vh 0vw;
+        }
+
+        .products-list {
+            flex-wrap: wrap;
+            .product-card {
+                text-align: center;
+
+                h2 {
+                    font-size: 7vw;
+                }
+
+                h4 {
+                    font-size: 3vw;
+                }
+
+                .sub-card {
+
+                    .card-text:first-of-type {
+                        margin-right: -20vw;
+                        margin-top: -5vh;
+                    }
+
+                    .card-text:last-of-type {
+                        margin-left: -20vw;
+                        margin-bottom: -5vh;
+                    }
+
+                    .card-text {
+                        width: 50vw;
+
+                        .background {
+                            h3,h5{
+                                font-size: 4vw;
+                            }
+                            p, ul{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 50vh;
+                        height: 50vh;
+                    }
+                }
+
+                h5 {
+                    font-size: 5vw;
+                }
+
+                .sizes {
+                    padding: 0vh 0vw;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vh;
+
+                    .size-subset {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    label {
+                        margin-right: 10px;
+                        font-weight: 600;
+                    }
+
+                    input {
+                        background-color: wheat;
+                        border: none;
+                        padding: 5px 10px;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        font-family: inherit;
+                    }
+
+                    button {
+                        background-color: #397013;
+                        border: none;
+                        color: white;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        padding: 0px 10px;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        background-color: #4a8b1b;
+                    }
+                }
+            }
+        }
+
+        #cart-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #fff;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #cart-content {
+            position: fixed;
+            bottom: 100px;
+            left: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            display: none;
+        }
+
+        #cart-content.visible {
+            display: block;
+        }
+
+        #cart {
+            ul {
+                list-style: none;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+
+                    svg {
+                        margin-bottom: -7px;
+                        margin-left: 10px;
+                    }
+                }
+
+                button:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
     /*footer*/
 
     footer {
