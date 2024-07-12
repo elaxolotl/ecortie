@@ -10,28 +10,28 @@ const products = [
         name: 'Ecortie',
         sizes: ['S', 'M', 'L'],
         description: 'Nettles mixed with used coffee grounds',
-        img: '/ecortie.jpg',
+        img: '/ecortie-product.png',
         price: 19
     },
     {
         name: 'Ortea powder',
         sizes: ['S', 'M', 'L'],
         description: 'Nettles mixed with used tea leftovers',
-        img: '/ecortie.jpg',
+        img: '/orti-product.png',
         price: 15
     },
     {
         name: 'Ortea compost',
         sizes: ['S', 'M', 'L'],
         description: 'Nettles mixed with used tea leftovers',
-        img: '/ecortie.jpg',
+        img: '/orti-product.png',
         price: 12
     },
     {
         name: 'Ecortea',
         sizes: ['S', 'M', 'L'],
         description: 'Nettles mixed with used tea leftovers',
-        img: '/ecortie.jpg',
+        img: '/ecortea-product.png',
         price: 21.5
     }
 ];

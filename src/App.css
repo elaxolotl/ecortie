@@ -662,7 +662,7 @@ nav {
         img{
           width: 70vh;
           height: 70vh;
-          object-fit: cover;
+          object-fit: contain;
         }
       }
       h5{
