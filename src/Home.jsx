@@ -116,7 +116,7 @@ function Benefits() {
         <div id='benefits'>
             <p className='header'>benefits</p>
             <h1>How <span>Ecortie</span> helps</h1>
-            <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates iure ab libero.</p>
+            <p className='description'>Ecortie turns waste into eco-friendly fertilizers, using stinging nettles, coffee grounds, and tea leaves to enrich soil and support greener gardens.</p>
             <div className='cards-list'>
                 {benefits.map((item) => (
                     <div className='card'>
@@ -140,17 +140,23 @@ function Products() {
         {
             name: "Ecortie",
             price: "19dt",
-            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg"
+            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg",
+            description: "Ecortie is a unique blend of stinging nettles and used coffee grounds, designed to boost soil fertility and plant health. This fertilizer enhances soil structure, improves water retention, and supplies essential nutrients to support robust plant growth. Ecortie is an ideal choice for eco-conscious gardeners looking for a sustainable and effective fertilizer option.",
+            usage: "Distribute Ecortie evenly over your garden soil, working it into the top layer to ensure nutrients reach plant roots. Use it in flower beds, vegetable gardens, or around trees and shrubs."
         },
         {
             name: "Ecortea",
             price: "21.5dt",
-            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg"
+            image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg",
+            description: "Ecortea combines the power of stinging nettles with tea leaves to create a balanced and effective fertilizer. This blend enriches the soil with essential nutrients, promotes healthy root development, and enhances plant vitality. Ecortea is perfect for gardeners seeking a natural and sustainable way to nourish their plants, ensuring lush and vibrant growth.",
+            usage: "Sprinkle Ecortea around the base of your plants, gently working it into the soil. Use it as a top dressing for flower beds, vegetable gardens, or potted plants." 
         },
         {
             name: "Orti+ compost",
             price: "12dt",
-            image: 'https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg'
+            image: 'https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg',
+            description: "Orti+ compost is crafted from the remaining stinging nettle leaves after the production process,ensuring nothing goes to waste. This nutrient-rich compost enhances soil fertility, promotes healthy plant growth, and helps retain moisture. Ideal for gardeners looking for an eco-friendly solution.",
+            usage: "Apply Orti+ compost by spreading a layer over your garden soil. Incorporate it into the top few inches of soil to ensure nutrients reach plant roots. Use it in flower beds, vegetable gardens, or around trees and shrubs."
         }
     ]
 
@@ -166,7 +172,7 @@ function Products() {
             <div className='products-title'>
                 <div>
                     <h1>What <span>Ecortie</span> makes</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error neque culpa cum eligendi quibusdam quo.</p>
+                    <p>Discover our top eco-friendly fertilizers, crafted from nettles, coffee grounds, and tea leaves. Perfect for vibrant and sustainable gardens.</p>
                 </div>
                 <div>
                     <Link to="Products"><button className='green-button'>See all of our products</button></Link>
@@ -189,11 +195,9 @@ function Products() {
                                         <h3>{item.name}</h3><h4>{item.price}</h4>
                                     </div>
                                     <div>
-                                        <button className='green-button' id='mobile-products-btn'>Buy this</button>
+                                    <Link to="Products"><button className='green-button' id='mobile-products-btn'>Buy this</button></Link>
                                     </div>
-                                    <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consequatur sit,
-                                        voluptas totam iure nam corrupti fugiat debitis ea, reprehenderit dolore laboriosam quo aspernatur tempore?
-                                        Molestias voluptatibus ut iure nobis.</p>
+                                    <p className='description'>{item.description}</p>
                                 </div>
                                 <div className="details-img">
                                     <img src={item.image} alt={item.name} className='product-img' />
@@ -201,9 +205,7 @@ function Products() {
                                         <div className="background">
                                             <span>
                                                 <h4>How to use</h4>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, harum velit
-                                                    tempora veniam veritatis aliquid doloribus expedita eos ratione necessitatibus,
-                                                    ipsum placeat voluptas natus tenetur at ipsa unde ut maiores.</p>
+                                                <p>{item.usage}</p>
                                                 <button className='green-button'>Buy this</button>
                                             </span>
                                         </div>
