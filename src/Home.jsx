@@ -21,7 +21,7 @@ function HeroText() {
                 <Link to="Products"><button className='green-button' id='desktop-btn'>Buy our products</button></Link>
                 <Link to="Get involved"><button className='green-button' id='desktop-btn'>Sell us your nettles</button></Link>
             </div>
-            <button className='green-button' id='mobile-hero-btn'><p>Discover Ecortie</p> <KeyboardArrowDownIcon /></button>
+            <a href="#intro"><button className='green-button' id='mobile-hero-btn'><p>Discover Ecortie</p> <KeyboardArrowDownIcon /></button></a>
         </div>
     )
 }
@@ -88,7 +88,7 @@ function Intro() {
                     </p>
                 </div>
             </div>
-            <button className='green-button'>Learn more about us</button>
+            <Link to="About us"><button className='green-button'>Learn more about us</button></Link>
         </div>
     )
 }
