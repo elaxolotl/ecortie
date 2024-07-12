@@ -5,6 +5,9 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import LoopIcon from '@mui/icons-material/Loop';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from "react-router-dom";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function HeroText() {
     return (
@@ -265,9 +268,9 @@ function Contact() {
                     <p>adress</p>
                     <p>number</p>
                     <h3>Follow us</h3>
-                    <img src='./facebook-svg.svg' alt="facebook" />
-                    <img src='./linkedin-svg.svg' alt="linkedin" />
-                    <img src="./tiktok-svg.svg" alt="tiktok" />
+                    <a href="https://www.instagram.com/ecortie__/" target='_blank'><InstagramIcon className='icon' /></a>
+                    <a href="https://www.linkedin.com/company/ecortie/" target='_blank'><LinkedInIcon className='icon' /></a>
+                    <a href="https://www.facebook.com/3ZeroTBS" target='_blank'><FacebookIcon className='icon'/></a>
                 </div>
             </div>
         </div>

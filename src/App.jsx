@@ -39,9 +39,9 @@ function Footer() {
           </ul>
           <div>
               <h3>follow us</h3>
-              <FacebookIcon />
-              <LinkedInIcon />
-              <InstagramIcon />
+              <a href="https://www.facebook.com/3ZeroTBS" target='_blank'><FacebookIcon /></a>
+              <a href="https://www.linkedin.com/company/ecortie/" target='_blank'><LinkedInIcon /></a>
+              <a href="https://www.instagram.com/ecortie__/" target='_blank'><InstagramIcon /></a>
           </div>
       </footer>
   )

@@ -2,29 +2,25 @@ import './App.css'
 import GrassIcon from '@mui/icons-material/Grass';
 import OilBarrelIcon from '@mui/icons-material/OilBarrel';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { Link } from "react-router-dom";
 
 function About() {
     const process = [
         {
             number: "1",
             title: "initial collection",
-            description: "Lorem ipsum dolorsit amet consectetur adipisicing elit. Voluptas, hic animi similique, aut nisi omnis magnam eveniet quis architecto possimus doloribus, commodi nemo cumque labore repudiandae. Dolore numquam incidunt alias.",
+            description: "We begin by gathering stinging nettles, used coffee grounds, and tea leaves from local sources, ensuring high-quality, organic materials. This initial collection supports local communities and reduces waste by repurposing natural resources.",
             icon: <GrassIcon />
         },
         {
             number: "2",
             title: "Steeping in water",
-            description: "Lorem ipsum dolorsit amet consectetur adipisicing elit. Voluptas, hic animi similique, aut nisi omnis magnam eveniet quis architecto possimus doloribus, commodi nemo cumque labore repudiandae. Dolore numquam incidunt alias.",
+            description: "The stinging nettles are steeped in water to extract their rich nutrients, creating a powerful base for our fertilizers. This process ensures that the beneficial properties of the nettles are fully utilized.",
             icon: <OilBarrelIcon />
         },
         {
             number: "3",
             title: "Straining",
-            description: "Lorem ipsum dolorsit amet consectetur adipisicing elit. Voluptas, hic animi similique, aut nisi omnis magnam eveniet quis architecto possimus doloribus, commodi nemo cumque labore repudiandae. Dolore numquam incidunt alias.",
+            description: "After steeping, the mixture is carefully strained to remove any solid particles, resulting in a smooth, nutrient-rich liquid. This final product is then ready to be blended with other ingredients to create our eco-friendly fertilizers",
             icon: <FilterAltIcon />
         },
 
@@ -36,21 +32,18 @@ function About() {
             <div className="story">
                 <div>
                     <p className='header'>Our story</p>
-                    <p>At vero eos et accusamus et iusto odio dignissimos
-                        ducimus qui blanditiis praesentium voluptatum deleniti
-                        atque corrupti quos dolores et quas molestias excepturi
-                        sint occaecati cupiditate non provident, similique sunt
-                        in culpa qui officia deserunt mollitia animi, id est
-                        laborum et dolorum fuga. Et harum quidem rerum facilis
-                        est et expedita distinctio. Nam libero tempore, cum soluta
-                        nobis est eligendi optio cumque nihil impedit quo minus id
-                        quod maxime placeat facere possimus, omnis voluptas
-                        assumenda est, omnis dolor repellendus. Temporibus autem
-                        quibusdam et aut officiis debitis aut rerum necessitatibus
-                        saepe eveniet ut et voluptates repudiandae sint et molestiae
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
-                        ut aut reiciendis voluptatibus maiores alias consequatur aut
-                        perferendis doloribus asperiores repellat</p>
+                    <p>We are a team of young, passionate
+                        individuals from Tunis Business School,
+                        united by our commitment to sustainability
+                        and improving the Tunisian economy. Born out
+                        of a competition within the "3ZERO TBS" club,
+                        our mission is to create eco-friendly fertilizers
+                        from natural resources like stinging nettles,
+                        used coffee grounds, and tea leaves, supporting
+                        both local farmers and the environment. At Ecortie,
+                        we strive to leave a meaningful impact on the world
+                        by promoting sustainable agricultural practices and
+                        fostering economic growth in Tunisia.</p>
                 </div>
                 <img src="/group-picture.jpg" alt="group-picture" />
             </div>
@@ -58,21 +51,15 @@ function About() {
                 <img src="https://www.almanac.com/sites/default/files/users/The%20Editors/shutterstock_2153212093.jpg" alt="group-picture" />
                 <div>
                     <p className='header'>Our mission</p>
-                    <p>At vero eos et accusamus et iusto odio dignissimos
-                        ducimus qui blanditiis praesentium voluptatum deleniti
-                        atque corrupti quos dolores et quas molestias excepturi
-                        sint occaecati cupiditate non provident, similique sunt
-                        in culpa qui officia deserunt mollitia animi, id est
-                        laborum et dolorum fuga. Et harum quidem rerum facilis
-                        est et expedita distinctio. Nam libero tempore, cum soluta
-                        nobis est eligendi optio cumque nihil impedit quo minus id
-                        quod maxime placeat facere possimus, omnis voluptas
-                        assumenda est, omnis dolor repellendus. Temporibus autem
-                        quibusdam et aut officiis debitis aut rerum necessitatibus
-                        saepe eveniet ut et voluptates repudiandae sint et molestiae
-                        non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
-                        ut aut reiciendis voluptatibus maiores alias consequatur aut
-                        perferendis doloribus asperiores repellat</p>
+                    <p>At Ecortie, our mission is to revolutionize
+                        agriculture with sustainable, eco-friendly
+                        fertilizers made from stinging nettles, used
+                        coffee grounds, and tea leaves. We aim to support
+                        local farmers, enhance soil health, and promote
+                        greener, more sustainable farming practices.
+                        Through innovation and dedication, we strive to
+                        improve the Tunisian economy while making a positive
+                        impact on the environment.</p>
                 </div>
             </div>
             <div className="process">

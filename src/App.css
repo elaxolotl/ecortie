@@ -488,6 +488,12 @@ nav {
         margin: 2vh 0vw;
       }
 
+      a{
+        .icon{
+          font-size: 40px;
+        }
+      }
+
     }
   }
 
@@ -583,6 +589,7 @@ nav {
           position: relative;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           background-color: white;
+          height: 25vh;
 
           .title {
             display: flex;
@@ -762,6 +769,10 @@ footer {
     width: 10vw;
     height: auto;
     object-fit: contain;
+  }
+
+  a{
+    color: white;
   }
 
   ul {
