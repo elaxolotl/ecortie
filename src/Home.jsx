@@ -139,17 +139,17 @@ function Products() {
     const products = [
         {
             name: "Ecortie",
-            price: "70dt",
+            price: "19dt",
             image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg"
         },
         {
-            name: "Ortea",
-            price: "90dt",
+            name: "Ecortea",
+            price: "21.5dt",
             image: "https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg"
         },
         {
-            name: "Ortie+",
-            price: "13dt",
+            name: "Orti+ compost",
+            price: "12dt",
             image: 'https://www.allpackchina.com/wp-content/uploads/2023/11/Protection-Against-Environmental-Agents.jpg'
         }
     ]
